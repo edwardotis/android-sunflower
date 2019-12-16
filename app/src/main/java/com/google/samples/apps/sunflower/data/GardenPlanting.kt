@@ -16,12 +16,8 @@
 
 package com.google.samples.apps.sunflower.data
 
-import androidx.room.ColumnInfo
-import androidx.room.Entity
-import androidx.room.ForeignKey
-import androidx.room.Index
-import androidx.room.PrimaryKey
-import java.util.Calendar
+import androidx.room.*
+import java.util.*
 
 /**
  * [GardenPlanting] represents when a user adds a [Plant] to their garden, with useful metadata.
@@ -33,7 +29,9 @@ import java.util.Calendar
  */
 @Entity(
     tableName = "garden_plantings",
-    foreignKeys = [ForeignKey(entity = Plant::class, parentColumns = ["id"], childColumns = ["plant_id"])],
+    foreignKeys = [
+        ForeignKey(entity = Plant::class, parentColumns = ["id"], childColumns = ["plant_id"])
+    ],
     indices = [Index("plant_id")]
 )
 data class GardenPlanting(
