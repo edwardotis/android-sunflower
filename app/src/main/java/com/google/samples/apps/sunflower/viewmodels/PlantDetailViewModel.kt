@@ -21,6 +21,7 @@ import androidx.lifecycle.viewModelScope
 import com.google.samples.apps.sunflower.PlantDetailFragment
 import com.google.samples.apps.sunflower.data.GardenPlantingRepository
 import com.google.samples.apps.sunflower.data.PlantRepository
+import kotlinx.coroutines.launch
 
 /**
  * The ViewModel used in [PlantDetailFragment].
