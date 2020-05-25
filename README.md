@@ -1,12 +1,11 @@
-Android Sunflower (alpha)
-=========================
-[![CircleCI](https://circleci.com/gh/android/sunflower/tree/master.svg?style=shield)](https://circleci.com/gh/android/sunflower/tree/master)
+Android Sunflower
+=================
 
 A gardening app illustrating Android development best practices with Android Jetpack.
 
 Android Sunflower is currently under heavy development.
 Note that some changes (such as database schema modifications) are not backwards
-compatible during this alpha period and may cause the app to crash. In this
+compatible and may cause the app to crash. In this
 case, please uninstall and re-install the app.
 
 Introduction
@@ -107,11 +106,9 @@ from the ktlint [README](https://github.com/shyiko/ktlint/blob/master/README.md)
 
 - Close Android Studio if it's open
 
-- Download ktlint using these [installation instructions](https://github.com/shyiko/ktlint/blob/master/README.md#installation)
+- Download ktlint using these [installation instructions](https://github.com/pinterest/ktlint/blob/master/README.md#installation)
 
-- Inside the project root directory run:
-
-  `./ktlint --apply-to-idea-project --android`
+- Apply ktlint settings to Android Studio using these [instructions](https://github.com/pinterest/ktlint/blob/master/README.md#-with-intellij-idea)
 
 - Start Android Studio
 
